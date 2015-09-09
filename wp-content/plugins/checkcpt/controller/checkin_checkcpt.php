@@ -14,8 +14,8 @@ class CheckCPT{
 
 	function __construct() {
 
-		add_action( 'init', 'checkin_create_multiple_post_types' );
-		add_action( 'init_post_types', 'checkin_create_post_type' 10, 3);
+		add_action( 'init', $this->array('checkin_create_multiple_post_types', true) );
+		add_action( ( 'init_post_types', $this->array('checkin_create_post_type') ), 10, 3);
 	}
 
 	public function checkin_create_multiple_post_types(){

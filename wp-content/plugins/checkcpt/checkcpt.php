@@ -10,4 +10,4 @@ Author URI: http://www.storebloom.com/
 
 define('__ROOT__', dirname(dirname(__FILE__)));
 
-require_once(__ROOT__.'/checkin_checkcpt.php'); 
+require_once(__ROOT__.'/checkcpt/controller/checkin_checkcpt.php'); 
